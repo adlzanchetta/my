@@ -1,0 +1,22 @@
+{
+  "title": {
+    "message": "Andre D. L. Zanchetta",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "A. D. L. Z. Logo",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Portfolio": {
+    "message": "Portfolio",
+    "description": "Navbar item with label Portfolio"
+  },
+  "item.label.Resume": {
+    "message": "Resume",
+    "description": "Navbar item with label Resume"
+  },
+  "item.label.Contact": {
+    "message": "Me encontre!",
+    "description": "Navbar item par contato"
+  }
+}

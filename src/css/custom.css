@@ -1,0 +1,144 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+
+/* Contact page */
+
+div.contact-items {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 1rem;
+}
+
+div.contact-item {
+  width: 25rem;
+}
+
+div.contact-item p {
+  display: flex;
+  height: 2rem;
+}
+
+div.contact-item p img {
+  height: 2rem;
+  width: 2rem;
+}
+
+div.contact-item p span {
+  padding-top: 0.2rem;
+  padding-left: 0.4rem;
+}
+
+div.contact-item p span.email {
+  color: #89C !important
+}
+
+div.contact-item p span.linkedin {
+  color: #0077B5
+}
+
+div.contact-item p span.facebook {
+  color: #1877F2
+}
+
+div.contact-item p span.github {
+  color: #333333
+}
+
+[data-theme='dark'] div.contact-item p span.github {
+  color: #CCCCCC
+}
+
+div.contact-item p span.reddit {
+  color: #FF4602
+}
+
+div.contact-item p span.instagram {
+  color: #BF4040
+}
+
+div.contact-item p span.researchgate {
+  color: #BF4040
+}
+
+div.contact-item p span.threads {
+  color: #666666
+}
+
+[data-theme='dark'] div.contact-item p span.threads {
+  color: #999999
+}
+
+div.contact-form {
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 0.5rem;
+  border-color: #ccc;
+  border-width: 1px;
+  border-style: solid;
+  background-color: #f0f0f7;
+  padding: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+div.contact-form form {
+  flex-grow: 1;
+}
+
+div.contact-form form div.contact-form-line {
+  flex-grow: 1;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+div.contact-form form div.contact-form-line div.contact-form-item {
+  width: 22rem;
+  padding-right: 1rem;
+}
+
+div.contact-form form div.contact-form-line div.contact-form-item input {
+  width: 100%;
+  height: 2rem;
+  border-radius: 0.5rem;
+  border-color: #ccc;
+}
+
+div.contact-form form div.contact-form-line textarea {
+  padding-top: 0.0rem;
+  padding-bottom: 0.0rem;
+  margin-top: 0.8rem;
+  margin-bottom: 0.8rem;
+}
+
+div.contact-form form div.contact-form-line div.contact-form-item button {
+  align-self: flex-end;
+}
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #777;
+  --ifm-color-primary-dark: #555555;
+  --ifm-color-primary-darker: #333333;
+  --ifm-color-primary-darkest: #111111;
+  --ifm-color-primary-light: #888888;
+  --ifm-color-primary-lighter: #999999;
+  --ifm-color-primary-lightest: #AAAAAA;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #888888;
+  --ifm-color-primary-dark: #777777;
+  --ifm-color-primary-darker: #666666;
+  --ifm-color-primary-darkest: #555555;
+  --ifm-color-primary-light: #AAAAAA;
+  --ifm-color-primary-lighter: #CCCCCC;
+  --ifm-color-primary-lightest: #EEEEEE;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
