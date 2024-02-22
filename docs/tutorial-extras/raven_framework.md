@@ -1,8 +1,9 @@
 ---
 sidebar_position: 1
+on_page_nav: false
 ---
 
-# Manage Docs Versions
+# Raven Framework
 
 Docusaurus can manage multiple versions of your docs.
 
