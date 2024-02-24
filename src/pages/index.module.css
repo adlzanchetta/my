@@ -4,10 +4,14 @@
  */
 
 .heroBanner {
-  padding: 4rem 0;
+  padding-top: 1.5rem;
+  padding-bottom: 0;
   text-align: center;
   position: relative;
   overflow: hidden;
+  background-image: url('/img/avatar/clouds.svg');
+  background-size: cover;
+  background-position: center;
 }
 
 @media screen and (max-width: 996px) {
