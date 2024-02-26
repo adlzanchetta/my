@@ -1,11 +1,20 @@
 ---
 sidebar_position: 1
-on_page_nav: false
+description: Widely used hydrologic modelling framework in C++.
 ---
 
 # Raven Framework
 
-Docusaurus can manage multiple versions of your docs.
+**About**
+
+A hydrologic modelling framework very popular among operational teams and academics in Canada, implemented and maintained by Prof. James Craig - University of Waterloo.
+
+Official repo: [CSHS-CWRA/RavenHydroFramework](https://github.com/CSHS-CWRA/RavenHydroFramework).
+
+**My contribution**
+
+1. Supported the implementation of the Basic Model Interface (BMI) interface;
+2. Replaced global variables by local variables for parallelization in BMI frameworks (refactoring).
 
 ## Create a docs version
 

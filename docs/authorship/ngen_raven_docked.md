@@ -1,5 +1,6 @@
 ---
 sidebar_position: 2
+description: NextGen and Raven frameworks in a consistent box.
 ---
 
 # NGen + Raven Docked

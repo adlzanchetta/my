@@ -118,6 +118,12 @@ div.contact-form form div.contact-form-line div.contact-form-item button {
   align-self: flex-end;
 }
 
+/* all docs */
+
+nav.pagination-nav {
+  display: none;
+}
+
 /* You can override the default Infima variables here. */
 :root {
   --ifm-color-primary: #777;

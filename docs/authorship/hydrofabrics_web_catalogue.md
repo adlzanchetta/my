@@ -1,5 +1,6 @@
 ---
 sidebar_position: 1
+description: A web system for requesting geodata on-demand.
 ---
 
 # Hydrofabrics Web Catalogue
