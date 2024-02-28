@@ -7,6 +7,8 @@ description: LeafletJS plugin for visualizing multilayer rasters.
 
 **About**
 
+Leaflet.CanvasLayer.Field is a plugin for LeafletJS that adds one or multiple layers to visualize fields (aka Rasters) from ASCIIGrid or GeoTIFF files on web maps.
+
 Official repo: [IHCantabria/Leaflet.CanvasLayer.Field](https://github.com/IHCantabria/Leaflet.CanvasLayer.Field).
 
 **My contribution**
