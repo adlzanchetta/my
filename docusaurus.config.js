@@ -63,14 +63,8 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
       navbar: {
         title: 'Andre D. L. Zanchetta',
-        logo: {
-          alt: 'A. D. L. Z. Logo',
-          src: 'img/logo_light.svg',
-        },
         items: [
           {
             type: 'docSidebar',
@@ -85,17 +79,16 @@ const config = {
             href: '/contact',
             label: 'Contact',
             position: 'left',
-          },
-          {
-            type: 'localeDropdown',
+          }, {
+            type: 'html',
             position: 'right',
+            value: '<div style="font-size:1.5rem; cursor:default">☕</div>'
           }
-        ],
+        ]
       },
       footer: {
         style: 'dark',
-        links: [
-        ],
+        links: [],
         copyright: `Copyright © ${new Date().getFullYear()} Andre D. L. Zanchetta. Built with Docusaurus and coffee.`,
       },
       prism: {

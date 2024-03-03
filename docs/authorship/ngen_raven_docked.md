@@ -1,58 +1,37 @@
 ---
 sidebar_position: 2
-description: NextGen and Raven frameworks in a consistent box.
+description: NextGen and Raven frameworks ready to go.
 ---
 
 # NGen + Raven Docked
 
-Documents are **groups of pages** connected through:
+**Official repository**
 
-- a **sidebar**
-- **previous/next navigation**
-- **versioning**
+In Github's [adlzanchetta/ngen-raven_docked](https://github.com/adlzanchetta/ngen-raven_docked).
 
-## Create your first Doc
+**About**
 
-Create a Markdown file at `docs/hello.md`:
+NOAA's NexGen is a proeminent framework for integrating multiple atmospheric/hydrologic models and datasets using the Basic Model Interface (BMI) standard. Is is,as of March 2024, on prototype stage and under intense development.
 
-```md title="docs/hello.md"
-# Hello
+University of Waterloo's Raven is a established framework for modelling hydrologic processes widely adoped in Canada both by the operation and academic communities. Its BMI interface was recently implemented and is in the phase of tests and maturing, specially having the integration with NexGen.
 
-This is my **first Docusaurus document**!
-```
+**Problem to solve**
 
-A new document is now available at [http://localhost:3000/docs/hello](http://localhost:3000/docs/hello).
+Both NexGen and Raven are in continuous development and are implemented in C++. Because of that, the use and development of a 'Raven under NexGen' faces challenges of:
 
-## Configure the Sidebar
+- *incompatibility*:
+  - the latest version of one of the frameworks may have changes that affects negativelly the compatibility between them;
+  - example files can become invalid;
+- *portability*:
+  - changes in the dependencies/procedures for compiling one of them (particularly NexGen) can be pretty <s>anoying</s> time consuming;
+  - Windows users would be excluded as NexGen is designed exclusively for Linux/Unix environments.
 
-Docusaurus automatically **creates a sidebar** from the `docs` folder.
+**Solution**
 
-Add metadata to customize the sidebar label and position:
+Use versioned containers (Docker) with continuous integration (Github Actions) end-to-end tests!
 
-```md title="docs/hello.md" {1-4}
----
-sidebar_label: 'Hi!'
-sidebar_position: 3
----
+**Tech stack**
 
-# Hello
-
-This is my **first Docusaurus document**!
-```
-
-It is also possible to create your sidebar explicitly in `sidebars.js`:
-
-```js title="sidebars.js"
-export default {
-  tutorialSidebar: [
-    'intro',
-    // highlight-next-line
-    'hello',
-    {
-      type: 'category',
-      label: 'Tutorial',
-      items: ['tutorial-basics/create-a-document'],
-    },
-  ],
-};
-```
+- *Docker*: creating Dockerfiles and implementing/debugging with Dev Containers;
+- *Python* and *Bash* scripting: for implementing series of end-to-end tests;
+- *Github Actions*: for continuous integration through automated tests.

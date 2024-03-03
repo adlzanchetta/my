@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 4
 description: LeafletJS plugin for visualizing multilayer rasters.
 ---
 
@@ -17,3 +17,8 @@ Official repo: [IHCantabria/Leaflet.CanvasLayer.Field](https://github.com/IHCant
 2. Included [example of implementation](https://github.com/IHCantabria/Leaflet.CanvasLayer.Field/blob/master/docs/example_LayersPlayer.html).
 
 ![LayersPlayer example](./img/leaflet_canvas_layer_field.gif)
+
+**Tech stack**
+
+- Vanilla JavaScript;
+- Leaflet library.

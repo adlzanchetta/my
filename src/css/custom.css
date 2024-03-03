@@ -5,6 +5,24 @@
  */
 
 
+/* Resume page */
+
+div.resume h2 {
+  padding-left: 0.5rem;
+}
+
+div.resume h3 {
+  padding-left: 1rem;;
+}
+
+div.resume p {
+  padding-left: 1.5rem;
+}
+
+div.resume ul {
+  padding-left: 2.5rem;
+}
+
 /* Contact page */
 
 div.contact-items {
@@ -60,6 +78,10 @@ div.contact-item p span.instagram {
   color: #BF4040
 }
 
+div.contact-item p span.skype {
+  color: #00a1df
+}
+
 div.contact-item p span.researchgate {
   color: #BF4040
 }
@@ -72,8 +94,9 @@ div.contact-item p span.threads {
   color: #999999
 }
 
+/* display: flex; */
 div.contact-form {
-  display: flex;
+  display: none;
   flex-wrap: wrap;
   border-radius: 0.5rem;
   border-color: #ccc;
@@ -119,6 +142,10 @@ div.contact-form form div.contact-form-line div.contact-form-item button {
 }
 
 /* all docs */
+
+a.theme-edit-this-page {
+  display: none;
+}
 
 nav.pagination-nav {
   display: none;

@@ -50,9 +50,15 @@ You can find me almost everywhere. Just look for **adlzanchetta**.
     </a>
   </div>
 
+  <div class='contact-item'>
+    <a href="https://join.skype.com/invite/s8JoezsjV1Fb" target="_blank">
+      ![Skype logo](/img/contact/icon_skype.svg) <span class='skype'>Skype</span>
+    </a>
+  </div>
+
 </div>
 
-Or you can send me a direct message:
+<!-- Or you can send me a direct message: -->
 
 <div class='contact-form'>
   <form>
