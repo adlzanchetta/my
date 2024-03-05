@@ -5,7 +5,7 @@ import styles from './styles.module.css';
 const FeatureList = [
   {
     title: 'Frontend',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    Svg: require('@site/static/img/landing-page/frontend_montains.svg').default,
     description: (
       <>
         ReactJS, CSS frameworks, responsive design, optimized web maps...
@@ -14,10 +14,10 @@ const FeatureList = [
   },
   {
     title: 'Backend',
-    Svg: require('@site/static/img/undraw_docusaurus_tree_my.svg').default,
+    Svg: require('@site/static/img/landing-page/backend_bricks.svg').default,
     description: (
       <>
-        Python APIs, NodeJS and TypeScript APIs, SQL databases, C and C++ programming...
+        Python, NodeJS and TypeScript APIs, SQL databases, C and C++ programming...
       </>
     ),
   },
@@ -26,7 +26,7 @@ const FeatureList = [
     Svg: require('@site/static/img/altogether_tower.svg').default,
     description: (
       <>
-        Docker, software design and engineering...
+        Docker, software design and engineering, continuous integration...
       </>
     ),
   },

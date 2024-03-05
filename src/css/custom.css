@@ -4,6 +4,54 @@
  * work well for content-centric websites.
  */
 
+/* fonts */
+
+@font-face {
+  font-family: 'Cinzel';
+  src: url('../../static/font/cinzel_latin-ext.woff2') format('woff2');  /* TODO: make this work */
+}
+
+@font-face {
+  font-family: 'Kode-Mono_Regular';
+  src: url('../../static/font/KodeMono-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Red-Hat-Mono_Regular';
+  src: url('../../static/font/RedHatMono-Regular.ttf') format('truetype');
+}
+
+
+/* Main page */
+
+[data-theme='dark'] h1.hero__title {
+  color: #333333/*#CCCCCC*/;
+}
+
+h1.hero__title {
+  font-family: "Kode-Mono_Regular", monospace;
+  font-size: 2.2rem;
+  color: #333333;
+  margin-bottom: 0.0rem;
+}
+
+[data-theme='dark'] p.hero__subtitle {
+  color: #444;
+}
+
+p.hero__subtitle {
+  color: #444;
+}
+
+/* Portfolio page */
+
+div.theme-doc-markdown h1 {
+  font-size: 2rem;
+}
+
+header h1 {
+  font-size: 2rem;
+}
 
 /* Resume page */
 
@@ -143,6 +191,24 @@ div.contact-form form div.contact-form-line div.contact-form-item button {
 
 /* all docs */
 
+div.coffee_icon {
+  width: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+  cursor: default;
+}
+
+[data-theme='dark'] a.navbar__brand {
+  color: #AAA;
+}
+
+a.navbar__brand {
+  font-family: "Kode-Mono_Regular", monospace;
+  font-size: 1.0rem;
+  color: #555;
+  margin-bottom: 0.0rem;
+}
+
 a.theme-edit-this-page {
   display: none;
 }
@@ -162,6 +228,8 @@ nav.pagination-nav {
   --ifm-color-primary-lightest: #AAAAAA;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  /*--ifm-font-family-base: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';*/
+  /*--ifm-font-family-base: 'Red-Hat-Mono_Regular', monospace;*/
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */

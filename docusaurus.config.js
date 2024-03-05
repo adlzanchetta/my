@@ -10,7 +10,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 const config = {
   title: 'adlzanchetta',
   tagline: 'Full-stack web dev',
-  favicon: 'img/favicon.ico',
+  favicon: 'favicon.ico',
 
   // Set the production url of your site here
   url: 'https://adlzanchetta.github.io',
@@ -81,7 +81,7 @@ const config = {
           }, {
             type: 'html',
             position: 'right',
-            value: '<div style="font-size:1.5rem; cursor:default">☕</div>'
+            value: '<div class="coffee_icon">☕</div>'
           }
         ]
       },
