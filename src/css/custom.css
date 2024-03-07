@@ -55,6 +55,7 @@ header h1 {
 
 /* Resume page */
 
+
 div.resume h2 {
   padding-left: 0.5rem;
 }
@@ -69,6 +70,23 @@ div.resume p {
 
 div.resume ul {
   padding-left: 2.5rem;
+}
+
+div.resume div.basicInfo p {
+  padding-buttom: 0.0rem;
+  margin-bottom: 0.0rem;
+}
+
+div.resume p.toggleMoreInfo-show {
+  cursor: pointer;
+}
+
+div.resume p.toggleMoreInfo-show:hover {
+  color: #777;
+}
+
+div.resume div.moreInfo span {
+  padding-left: 1.5rem
 }
 
 /* Contact page */

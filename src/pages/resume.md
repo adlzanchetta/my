@@ -2,21 +2,64 @@
 title: Resume
 ---
 
+import { BasicInfo, ToggleMoreInfo } from './resume_components.js'
+
 # Resume
 
-<div class='resume'>
+<div className='resume'>
 
 ## Current Positions
 
 ### Software Engineer *at* NModes
 
-Since September 2022 <br/>
-Toronto - Ontario, Canada *(remotely)*
+<BasicInfo>
+    Since September 2022 <br/>
+    Toronto - Ontario, Canada *(remotely)*
+</BasicInfo>
+<ToggleMoreInfo dict_of_lists={
+  {
+    "Responsabilities":
+      ["Planning and implementation of RESTful APIs;",
+       "Design, implementation and maintenance of SQL databases;",
+       "Automate communication with generative models through prompt engineering."],
+    "Tech stack - frontend":
+      ["ReactJS + Recoil framework;",
+       "Tailwind CSS (for styling);",
+       "Vercel hosting (for continuous deployment)."],
+    "Tech stack - backend":
+      ["ExpressJS and Flask (for RESTful APIs);",
+       "PostGreSQL (relational database management and deveploment);",
+       "PM2 (for process management)."],
+    "Engineering and integration": [
+      "Vercel (for continuous delivery)",
+      "Git - BitBucket (for code versioning)",
+      "AWS cloud server administration"
+    ]
+  }
+} />
 
 ### Full-Stack Web Developer *at* University of Manitoba
 
-Since February 2023<br/>
-Winnipeg - Manitoba, Canada *(remotely)*
+<BasicInfo>
+  Since February 2023<br/>
+  Winnipeg - Manitoba, Canada *(remotely)*
+</BasicInfo>
+<ToggleMoreInfo dict_of_lists={{
+  "Responsabilities":
+    ["Design tools for research;",
+     "Set up an maintain cloud infrastructure."],
+  "Tech stack - frontend": [
+     "ReactJS + Recoil framework;",
+     "MapLibGL (for web mapping);",
+     "Material (for styling)."],
+  "Tech stack - backend": [
+    "Bash and Python scripting;",
+    "Geopandas (Python lib), QGis, tipecanoe, (for geographic data processing)",
+    "C++"],
+  "Engineering and integration": [
+    "Docker - implementation of containers;",
+    "Github Actions (for continuous integration)."]
+}} />
 
 ## Recent Experience
 
