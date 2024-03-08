@@ -14,12 +14,13 @@ const config = {
 
   // Set the production url of your site here
   url: 'https://adlzanchetta.github.io',
-  baseUrl: '/my/',
+  baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'adlzanchetta', // GitHub user name.
-  projectName: 'my',                // Usually repository name.
+  organizationName: 'adlzanchetta',      // GitHub user name.
+  projectName: 'adlzanchetta.github.io', // GitHub repository name.
+  deploymentBranch: 'gh-pages',          // The branch your site is deployed from.
   trailingSlash: false,
 
   onBrokenLinks: 'throw',

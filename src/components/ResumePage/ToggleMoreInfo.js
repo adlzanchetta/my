@@ -1,14 +1,38 @@
 import { useState } from "react";
 
 
-const BasicInfo = ({children}) => {
+// sub component
+
+const InfoTitle = ({title}) => {
     return (
-        <div className="basicInfo">
-            {children}
-        </div>
+        <span><strong>{title}:</strong></span>
     )
 }
 
+const InfoContent = ({value}) => {
+
+    // if value is a string, return it
+    if (typeof value === 'string') {
+        return (<> {value} </>)
+    }
+
+    // if value is a list, return each item in a new line
+    if (Array.isArray(value)) {
+        return (
+            <ul>
+                {value.map((item, idx) => {
+                    return <li key={idx}>{item}</li>
+                })}
+            </ul>
+        )
+    }
+
+    // if value is something else, raise an error
+    throw new Error("Invalid value type. Must be a string or a list.");
+}
+
+
+// main component
 
 const ToggleMoreInfo = ({dict_of_lists, children}) => {
 
@@ -29,12 +53,8 @@ const ToggleMoreInfo = ({dict_of_lists, children}) => {
             Object.entries(dict_of_lists).map(([key, value]) => {
                 return (
                     <div key={key} className="moreInfo">
-                        <span><strong>{key}:</strong></span>
-                        <ul>
-                            {value.map((item, idx) => {
-                                return <li key={idx}>{item}</li>
-                            })}
-                        </ul>
+                        <InfoTitle title={key} />
+                        <InfoContent value={value} />
                     </div>
                 );
             })
@@ -49,4 +69,5 @@ const ToggleMoreInfo = ({dict_of_lists, children}) => {
     )
 }
 
-export { BasicInfo, ToggleMoreInfo }
+
+export default ToggleMoreInfo;

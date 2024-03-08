@@ -2,7 +2,8 @@
 title: Resume
 ---
 
-import { BasicInfo, ToggleMoreInfo } from './resume_components.js'
+import BasicInfo from '../components/ResumePage/BasicInfo.js';
+import ToggleMoreInfo from '../components/ResumePage/ToggleMoreInfo.js';
 
 # Resume
 
@@ -64,21 +65,28 @@ import { BasicInfo, ToggleMoreInfo } from './resume_components.js'
 ## Recent Experience
 
 ### Research and Teaching Assistant *at* McMaster University
-
-September 2018 to August 2020<br />
-Hamilton - Ontario, Canada<br />
+<BasicInfo>
+  September 2018 to August 2020<br />
+  Hamilton - Ontario, Canada
+</BasicInfo>
 
 ### Full-Stack Web Developer *at* IIHR - Hydrosciences and engineering
-
-May 2017 to August 2018<br />
-Iowa City - Iowa, USA<br />
+<BasicInfo>
+  May 2017 to August 2018<br />
+  Iowa City - Iowa, USA<br />
+</BasicInfo>
 
 ## Education
 
 ### Ph.D. | Research area: hydroinformatics
-On: *December 2022*<br />
-From: *McMaster University* - *Faculty of Engineering*<br />
-At: *Hamilton - ON, Canada*
+<BasicInfo>
+  On: *December 2022*<br />
+  From: *McMaster University* - *Faculty of Engineering*<br />
+  At: *Hamilton - ON, Canada*
+</BasicInfo>
+<ToggleMoreInfo dict_of_lists={{
+  "Tesis Title": "Using Machine Learning Techniques to Improve Operational Flash Flood Forecasting"
+}} />
 
 ### M.Sc. | Research area: hydroinformatics
 On: *May 2017*<br />
