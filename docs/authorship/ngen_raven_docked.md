@@ -11,9 +11,9 @@ In Github's [adlzanchetta/ngen-raven_docked](https://github.com/adlzanchetta/nge
 
 **About**
 
-NOAA's NexGen is a proeminent framework for integrating multiple atmospheric/hydrologic models and datasets using the Basic Model Interface (BMI) standard. Is is,as of March 2024, on prototype stage and under intense development.
+NOAA's NexGen is a proeminent framework for integrating multiple atmospheric/hydrologic models and datasets using the Basic Model Interface (BMI) standard. It is, as of March 2024, on prototype stage and under intense development.
 
-University of Waterloo's Raven is a established framework for modelling hydrologic processes widely adoped in Canada both by the operation and academic communities. Its BMI interface was recently implemented and is in the phase of tests and maturing, specially having the integration with NexGen.
+University of Waterloo's Raven is a established framework for modelling hydrologic processes widely adoped in Canada both by the operation and academic communities. Its BMI interface was recently implemented and is in the phase of tests and maturing, specially having the integration with NexGen as a target.
 
 **Problem to solve**
 
@@ -33,5 +33,5 @@ Use versioned containers (Docker) with continuous integration (Github Actions) e
 **Tech stack**
 
 - *Docker*: creating Dockerfiles and implementing/debugging with Dev Containers;
-- *Python* and *Bash* scripting: for implementing series of end-to-end tests;
-- *Github Actions*: for continuous integration through automated tests.
+- *Python* / *Bash* scripting: for implementing series of end-to-end tests;
+- *Github Actions*: for continuous integration and quality assurance.

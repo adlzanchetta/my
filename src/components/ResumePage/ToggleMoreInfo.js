@@ -1,5 +1,7 @@
 import { useState } from "react";
 
+import styles from './styles.module.css';
+
 
 // sub component
 
@@ -47,7 +49,7 @@ const ToggleMoreInfo = ({dict_of_lists, children}) => {
     }
 
     return (
-      <>
+      <div className={styles.toggleMoreInfo}>
         {
           (dict_of_lists !== undefined) && (dict_of_lists !== null) && (Object.keys(dict_of_lists).length > 0) &&
             Object.entries(dict_of_lists).map(([key, value]) => {
@@ -65,7 +67,7 @@ const ToggleMoreInfo = ({dict_of_lists, children}) => {
         <p className="toggleMoreInfo-show" onClick={() => setShowMoreInfo(false)}>
             [hide details]
         </p>
-      </>
+      </div>
     )
 }
 
